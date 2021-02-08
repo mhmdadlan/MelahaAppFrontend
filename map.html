@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@themepixels">
+    <meta name="twitter:creator" content="@themepixels">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bracket Plus">
+    <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="twitter:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/bracketplus">
+    <meta property="og:title" content="Bracket Plus">
+    <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
+
+    <meta property="og:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="author" content="ThemePixels">
+
+    <title>ميناء الجبيل الصناعي</title>
+
+    <!-- vendor css -->
+    <link href="lib/_fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/rickshaw/rickshaw.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Bracket CSS -->
+    <link rel="stylesheet" href="css/bracket.css">
+    <link rel="stylesheet" href="css/bracket.simple-white.css">
+    <link rel="stylesheet" href="css/map-icons.min.css">
+    <link rel="stylesheet" href="css/snazzy-info-window.min.css">
+    <style>
+        .table-row {
+            cursor: pointer;
+        }
+
+        #map {
+            height: 600px;
+        }
+
+        #legend {
+            background: rgba(255, 255, 255, 1);
+            padding: 10px 20px;
+            margin: 10px;
+            border: 3px solid #000;
+        }
+
+        #legend h3 {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        #legend i {
+            text-align: center;
+        }
+
+        #legendList svg {
+            width: 25px;
+            left: -40px;
+            top: 10px;
+        }
+
+        .custom-window {
+            width: 400px;
+        }
+
+        #mapWrapper {
+            position: relative;
+        }
+
+        #mapFilter {
+            margin-right: 20px;
+            z-index: 5000;
+            width: auto;
+        }
+
+        #filterTitle h5 {
+            margin: 0;
+            display: none;
+            text-align: right;
+            margin-right: 45px;
+            margin-top: 5px;
+        }
+
+        #filterFromContainer {
+            padding: 0;
+            max-width: 300px;
+            color: #fff;
+        }
+
+        #filterTitle {
+            background-color: #2d7d96;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            margin-top: 20px;
+            padding-top: 12px;
+            border-radius: 50%;
+        }
+
+        #filterTitle span.left {
+            float: right;
+            margin-right: 13px;
+        }
+
+        .filterForm {
+            position: relative;
+            padding-top: 5px;
+            background-color: #f3f3f3;
+            display: block;
+            color: #2e3138;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .filterSection {
+            padding: 15px;
+            border-top: 1px solid #d3d3d3;
+        }
+
+        .filterSection:first-of-type {
+            border-top: 0;
+        }
+
+        .filterSection .checkbox-inline {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ########## START: LEFT PANEL ########## -->
+    <div class="br-logo">
+        <a href=""><img src="img/logo.png" alt="" class="img-fluid" height="60px"></span>
+        </a>
+    </div>
+    <div class="br-sideleft sideleft-scrollbar">
+        <label class="sidebar-label pd-x-10 mg-t-20 op-3">القائمة</label>
+        <ul class="br-sideleft-menu">
+            <li class="br-menu-item">
+                <a href="index.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-home"></i>
+                    <span class="menu-item-label">الرئيسية</span>
+                </a>
+                <!-- br-menu-link -->
+            </li>
+            <!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub">
+                    <i class="menu-item-icon fas fa-passport"></i>
+                    <span class="menu-item-label">الرحلات</span>
+                </a>
+                <!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                    <li class="sub-item"><a href="expected_voyages.html" class="sub-link">الرحلات المتوقعة</a></li>
+                    <li class="sub-item"><a href="current_voyages.html" class="sub-link ">الرحلات الحالية</a></li>
+                    <li class="sub-item"><a href="voyages_archive.html" class="sub-link">أرشيف الرحلات</a></li>
+                </ul>
+            </li>
+            <li class="br-menu-item">
+                <a href="ships.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-ship"></i>
+                    <span class="menu-item-label">السفن</span>
+                </a>
+                <!-- br-menu-link -->
+            </li>
+            <!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub">
+                    <i class="menu-item-icon fas fa-anchor"></i>
+                    <span class="menu-item-label">الترصيف</span>
+                </a><!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                    <li class="sub-item"><a href="berths.html" class="sub-link">قائمة الأرصف</a></li>
+                    <li class="sub-item"><a href="Terminals.html" class="sub-link">مناطق الترصيف</a></li>
+                </ul>
+            </li>
+            <!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="Products.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-dolly"></i>
+                    <span class="menu-item-label">البضائع</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="map.html" class="br-menu-link active">
+                    <i class="menu-item-icon fas fa-map"></i>
+                    <span class="menu-item-label">الخريطة</span>
+                </a>
+                <!-- br-menu-link -->
+            </li>
+            <!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-chart-line"></i>
+                    <span class="menu-item-label">التقارير</span>
+                </a>
+                <!-- br-menu-link -->
+            </li>
+            <!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub">
+                    <i class="menu-item-icon fas fa-cog"></i>
+                    <span class="menu-item-label">الإعدادات</span>
+                </a><!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                    <li class="sub-item"><a href="GeneralConfig.html" class="sub-link">عام</a></li>
+                    <li class="sub-item"><a href="ProductsConfig.html" class="sub-link">البضائع</a></li>
+                    <li class="sub-item"><a href="ShipsConfig.html" class="sub-link">السفن</a></li>
+                    <li class="sub-item"><a href="OperatorsConfig.html" class="sub-link">المشغلين و وكلاء الملاحة</a>
+                    </li>
+
+                    <li class="sub-item"><a href="UsersConfig.html" class="sub-link">المستخدمين والصلاحيات</a></li>
+                </ul>
+            </li>
+
+            <!-- br-menu-item -->
+        </ul>
+        <!-- br-sideleft-menu -->
+
+        <br>
+    </div>
+    <!-- br-sideleft -->
+    <!-- ########## END: LEFT PANEL ########## -->
+
+    <!-- ########## START: HEAD PANEL ########## -->
+    <div class="br-header">
+        <div class="br-header-left">
+            <div class="navicon-left hidden-md-down"><a id="btnLeftMenu" href=""><i
+                        class="icon ion-navicon-round"></i></a></div>
+            <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href=""><i
+                        class="icon ion-navicon-round"></i></a></div>
+            <div class="input-group hidden-xs-down wd-170 transition">
+                <input id="searchbox" type="text" class="form-control" placeholder="بحث">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+            <!-- input-group -->
+
+        </div>
+        <!-- br-header-left -->
+        <div class="br-pagetitle hidden-md-down pd-y-0 mg-x-0 .br-header-left">
+            <i class="fas fa-map fa-2x tx-info"></i>
+            <div>
+                <h3 class="tx-primary pd-t-5">خريطة السفن</h3>
+            </div>
+        </div>
+        <div class="br-header-right">
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
+                        <i class="icon ion-ios-bell-outline tx-24"></i>
+                        <!-- start: if statement -->
+                        <span class="square-8 bg-danger pos-absolute t-15 r-5 rounded-circle"></span>
+                        <!-- end: if statement -->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-header">
+                        <div class="dropdown-menu-label">
+                            <label>التنبيهات</label>
+                            <a href="">تعيين الكل كمقروء</a>
+                        </div>
+                        <!-- d-flex -->
+
+                        <div class="media-list">
+                            <div class="dropdown-footer">
+                                <a href="">عرض جميع الإشعارات <i class="fa fa-angle-down"></i></a>
+                            </div>
+                        </div>
+                        <!-- media-list -->
+                    </div>
+                    <!-- dropdown-menu -->
+                </div>
+                <!-- dropdown -->
+                <div class="dropdown">
+                    <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+                        <span class="logged-name hidden-md-down">عبدالرحمن</span>
+                        <img src="img/img1.jpg" class="wd-32 rounded-circle" alt="">
+                        <span class="square-10 bg-success"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-header wd-250">
+                        <div class="tx-center">
+                            <a href=""><img src="img/img1.jpg" class="wd-80 rounded-circle" alt=""></a>
+                            <h6 class="logged-fullname">عبدالرحمن الراشدان</h6>
+                            <p>a.alrashidan@mawani.gov.sa</p>
+                        </div>
+                        <hr>
+                        <ul class="list-unstyled user-profile-nav">
+                            <li><a href="login.html"><i class="icon ion-power"></i> تسجيل خروج</a></li>
+                        </ul>
+                    </div>
+                    <!-- dropdown-menu -->
+                </div>
+                <!-- dropdown -->
+            </nav>
+        </div>
+        <!-- br-header-right -->
+    </div>
+    <!-- br-header -->
+    <!-- ########## END: HEAD PANEL ########## -->
+
+
+    <!-- ########## START: MAIN PANEL ########## -->
+    <div class="br-mainpanel">
+        <div class="br-pagetitle hidden-lg-up">
+            <i class="fas fa-map fa-3x"></i>
+            <div>
+                <h4>خريطة السفن</h4>
+                <p class="mg-b-0">قائمة السفن المسجلة في النظام</p>
+            </div>
+        </div>
+        <!-- d-flex -->
+
+        <div class="br-pagebody pd-x-0">
+            <div id="mapWrapper">
+                <div dir="ltr" id="map"></div>
+                <div id="legend" class="tx-dark">
+                    <h3>أنواع السفن</h3>
+                    <ul id="legendList" class="fa-ul" width="100%">
+                    </ul>
+                    <div id="nightMode" class="br-toggle br-toggle-rounded br-toggle-primary map">
+                        <div class="br-toggle-switch map"></div>
+                    </div>
+                </div>
+                <div id="mapFilter" dir="rtl">
+                    <div id="filterFromContainer">
+                        <div id="filterTitle" class="center-block">
+                            <span class="fa fa-filter fa-2x"></span>
+                            <h5>تصفية الخريطة</h5>
+                        </div>
+                        <div class="filterForm">
+                            <div class="filterSection">
+                                <span style="display: block;">موقع السفينة:</span>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="port" value="port" checked>
+                                    <label class="form-check-label mg-r-5" for="port">الميناء</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="anchorage" value="anchorage"
+                                        checked>
+                                    <label class="form-check-label mg-r-5" for="anchorage">منطقة المخطاف</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="expected_voyages"
+                                        value="expected_voyages">
+                                    <label class="form-check-label mg-r-5" for="expected_voyages">رحلات قادمة</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- br-pagebody -->
+
+        <footer class="br-footer ">
+            <div class="footer-left">
+                <div class="mg-b-2">&copy; 2017. جميع الحقوق محفوظة ميناء الملك فهد الصناعي.</div>
+            </div>
+        </footer>
+    </div>
+    <!-- br-mainpanel -->
+    <!-- ########## END: MAIN PANEL ########## -->
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/moment/min/moment.min.js"></script>
+    <script src="lib\gmaps\gmaps.min.js"></script>
+
+    <script src="js/bracket.js"></script>
+    <script src="js/ResizeSensor.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMWcPXAwWuXuuxBIUYtFp5m_ZQ9g_0vsg"></script>
+    <script src="js/markerclusterer.js"></script>
+    <script src="js/snazzy-info-window.min.js"></script>
+    <script src="js/map.shiftworker.js"></script>
+    <script>
+        $(function () {
+        })
+    </script>
+
+</body>
+
+</html>

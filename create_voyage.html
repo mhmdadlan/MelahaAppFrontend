@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Twitter -->
+  <meta name="twitter:site" content="@themepixels">
+  <meta name="twitter:creator" content="@themepixels">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bracket Plus">
+  <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
+  <meta name="twitter:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="http://themepixels.me/bracketplus">
+  <meta property="og:title" content="Bracket Plus">
+  <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
+
+  <meta property="og:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+  <meta property="og:image:secure_url" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+
+  <!-- Meta -->
+  <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
+  <meta name="author" content="ThemePixels">
+
+  <title>ميناء الجبيل الصناعي</title>
+
+  <!-- vendor css -->
+  <link href="lib/_fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/rickshaw/rickshaw.min.css" rel="stylesheet">
+  <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
+  <!-- Bracket CSS -->
+  <link rel="stylesheet" href="css/bracket.css">
+  <link rel="stylesheet" href="css/bracket.simple-white.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <style>
+    .table-row {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ########## START: LEFT PANEL ########## -->
+  <div class="br-logo"><a href=""><img src="img/logo.png" alt="" class="img-fluid" height="60px"></span></a></div>
+  <div class="br-sideleft sideleft-scrollbar">
+    <label class="sidebar-label pd-x-10 mg-t-20 op-3">القائمة</label>
+    <ul class="br-sideleft-menu">
+      <li class="br-menu-item">
+        <a href="index.html" class="br-menu-link">
+          <i class="menu-item-icon fas fa-home"></i>
+          <span class="menu-item-label">الرئيسية</span>
+        </a><!-- br-menu-link -->
+      </li><!-- br-menu-item -->
+      <li class="br-menu-item">
+        <a href="#" class="br-menu-link with-sub active show-sub">
+          <i class="menu-item-icon fas fa-passport"></i>
+          <span class="menu-item-label">الرحلات</span>
+        </a><!-- br-menu-link -->
+        <ul class="br-menu-sub">
+          <li class="sub-item"><a href="expected_voyages.html" class="sub-link">الرحلات المتوقعة</a></li>
+          <li class="sub-item"><a href="current_voyages.html" class="sub-link">الرحلات الحالية</a></li>
+          <li class="sub-item"><a href="voyages_archive.html" class="sub-link">أرشيف الرحلات</a></li>
+        </ul>
+      </li>
+      <li class="br-menu-item">
+        <a href="ships.html" class="br-menu-link">
+          <i class="menu-item-icon fas fa-ship"></i>
+          <span class="menu-item-label">السفن</span>
+        </a><!-- br-menu-link -->
+      </li><!-- br-menu-item -->
+      <li class="br-menu-item">
+        <a href="#" class="br-menu-link with-sub">
+          <i class="menu-item-icon fas fa-anchor"></i>
+          <span class="menu-item-label">الترصيف</span>
+        </a><!-- br-menu-link -->
+        <ul class="br-menu-sub">
+          <li class="sub-item"><a href="berths.html" class="sub-link">قائمة الأرصف</a></li>
+          <li class="sub-item"><a href="Terminals.html" class="sub-link">مناطق الترصيف</a></li>
+        </ul>
+      </li>
+      <li class="br-menu-item">
+        <a href="Products.html" class="br-menu-link">
+          <i class="menu-item-icon fas fa-dolly"></i>
+          <span class="menu-item-label">البضائع</span>
+        </a><!-- br-menu-link -->
+      </li><!-- br-menu-item -->
+      <li class="br-menu-item">
+        <a href="map.html" class="br-menu-link">
+          <i class="menu-item-icon fas fa-map"></i>
+          <span class="menu-item-label">الخريطة</span>
+        </a><!-- br-menu-link -->
+      </li><!-- br-menu-item -->
+      <li class="br-menu-item">
+        <a href="#" class="br-menu-link">
+          <i class="menu-item-icon fas fa-chart-line"></i>
+          <span class="menu-item-label">التقارير</span>
+        </a><!-- br-menu-link -->
+      </li><!-- br-menu-item -->
+      <li class="br-menu-item">
+        <a href="#" class="br-menu-link with-sub">
+          <i class="menu-item-icon fas fa-cog"></i>
+          <span class="menu-item-label">الإعدادات</span>
+        </a><!-- br-menu-link -->
+        <ul class="br-menu-sub">
+          <li class="sub-item"><a href="GeneralConfig.html" class="sub-link">عام</a></li>
+          <li class="sub-item"><a href="ProductsConfig.html" class="sub-link">البضائع</a></li>
+          <li class="sub-item"><a href="ShipsConfig.html" class="sub-link">السفن</a></li>                     <li class="sub-item"><a href="OperatorsConfig.html" class="sub-link">المشغلين و وكلاء الملاحة</a></li>
+          
+          <li class="sub-item"><a href="UsersConfig.html" class="sub-link">المستخدمين والصلاحيات</a></li>
+        </ul>
+      </li>
+    </ul><!-- br-sideleft-menu -->
+
+    <br>
+  </div><!-- br-sideleft -->
+  <!-- ########## END: LEFT PANEL ########## -->
+
+  <!-- ########## START: HEAD PANEL ########## -->
+  <div class="br-header">
+    <div class="br-header-left">
+      <div class="navicon-left hidden-md-down"><a id="btnLeftMenu" href=""><i class="icon ion-navicon-round"></i></a>
+      </div>
+      <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href=""><i
+            class="icon ion-navicon-round"></i></a></div>
+      <div class="input-group hidden-xs-down wd-170 transition">
+        <input id="searchbox" type="text" class="form-control" placeholder="بحث">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+        </span>
+      </div><!-- input-group -->
+    </div><!-- br-header-left -->
+    <div class="br-header-right">
+      <nav class="nav">
+        <div class="dropdown">
+          <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
+            <i class="icon ion-ios-bell-outline tx-24"></i>
+            <!-- start: if statement -->
+            <span class="square-8 bg-danger pos-absolute t-15 r-5 rounded-circle"></span>
+            <!-- end: if statement -->
+          </a>
+          <div class="dropdown-menu dropdown-menu-header">
+            <div class="dropdown-menu-label">
+              <label>التنبيهات</label>
+              <a href="">تعيين الكل كمقروء</a>
+            </div><!-- d-flex -->
+
+            <div class="media-list">
+              <div class="dropdown-footer">
+                <a href="">عرض جميع الإشعارات <i class="fa fa-angle-down"></i></a>
+              </div>
+            </div><!-- media-list -->
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
+        <div class="dropdown">
+          <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+            <span class="logged-name hidden-md-down">عبدالرحمن</span>
+            <img src="img/img1.jpg" class="wd-32 rounded-circle" alt="">
+            <span class="square-10 bg-success"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-header wd-250">
+            <div class="tx-center">
+              <a href=""><img src="img/img1.jpg" class="wd-80 rounded-circle" alt=""></a>
+              <h6 class="logged-fullname">عبدالرحمن الراشدان</h6>
+              <p>a.alrashidan@mawani.gov.sa</p>
+            </div>
+            <hr>
+            <ul class="list-unstyled user-profile-nav">
+              <li><a href="login.html"><i class="icon ion-power"></i> تسجيل خروج</a></li>
+            </ul>
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
+      </nav>
+    </div><!-- br-header-right -->
+  </div><!-- br-header -->
+  <!-- ########## END: HEAD PANEL ########## -->
+
+
+  <!-- ########## START: MAIN PANEL ########## -->
+  <div class="br-mainpanel">
+    <div class="br-pagetitle">
+      <i class="fas fa-passport fa-3x"></i>
+      <div>
+        <h4><i class="fas fa-plus tx-14"></i> إضافة رحلة </h4>
+        <p class="mg-b-0">إضافة رحلة جديدة يدويا</p>
+      </div>
+    </div><!-- d-flex -->
+
+    <div class="br-pagebody">
+      <div class="br-section-wrapper">
+        <form action="voyage_details.html" class="">
+          <div class="" id="voyage_wizard">
+            <h3>بيانات الرحلة</h3>
+            <section>
+              <div class="row mg-b-25">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">ميناء الوجهة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="text" name="destination_port" placeholder="إسم ميناء الوجهة">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">الميناء السابق: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="text" name="last_port" placeholder="إسم الميناء السابق">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">الميناء التالي: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="text" name="next_port" placeholder="إسم الميناء التالي">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">وكيل الملاحة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="text" name="ship_agent" placeholder="إسم وكيل الملاحة">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">عمق الغاطس: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="draught" placeholder="عمق الغاطس">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">عدد البحارة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="sailers_count" placeholder="عدد البحارة">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">وقت الوصول المتوقع</label>
+                    <input type="text" class="form-control datepicker" placeholder="تحديد الوقت">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">حالة السفينة</label>
+                    <select class="form-control" name="Status" id="Status">
+                      <option value="" disabled>-- إختر --</option>
+                      <option value="0">under way using engine</option>
+                      <option value="1">at anchor</option>
+                      <option value="2">not under command</option>
+                      <option value="3">restricted maneuverability</option>
+                      <option value="4">constrained by her draught</option>
+                      <option value="5">moored</option>
+                      <option value="6">aground </option>
+                      <option value="7">under way sailing </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">شحن مياه</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><label class="ckbox wd-16 mg-b-0">
+                            <input type="checkbox" name="LoadWater"><span></span>
+                          </label></span>
+                      </div>
+                      <input name="WaterTon" type="number" class="form-control" placeholder="الطنية">
+                    </div><!-- input-group -->
+
+                  </div>
+                </div>
+              </div><!-- row -->
+
+            </section>
+            <h3>بيانات السفينة</h3>
+            <section>
+              <div class="row mg-b-25">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">MMSI: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="text" name="MMSI" placeholder="رقم MMSI">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">IMO: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="text" name="IMO" placeholder="رقم IMO">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">إشارة النداء: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="text" name="CALLSIGN" placeholder="إشارة النداء">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">إسم السفينة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="text" name="SHIPNAME" placeholder="إسم السفينة">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="form-control-label">نوع السفينة</label>
+                    <select class="form-control" name="SHIPTYPE" id="SHIPTYPE">
+                      <option value="" selected disabled>-- إختر --</option>
+                    </select>
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">سنة صنع السفينة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="text" name="YEAR_BUILT" placeholder="سنة صنع السفينة">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="form-control-label">العلم</label>
+                    <select class="form-control" name="FLAG" id="FLAG">
+                      <option value="" selected disabled>-- إختر --</option>
+                    </select>
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">الطول الكلي: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="LENGTH" placeholder="الطول الكلي">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">العرض: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="Width" placeholder="العرض">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">أقصى عمق للغاطس: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="DRAUGHT" placeholder="أقصى عمق للغاطس">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">الطنية الكلية المسجلة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="GRT" placeholder="الطنية الكلية المسجلة">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">الطنية الساكنة للسفينة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="DWT" placeholder="الطنية الساكنة للسفينة">
+                  </div>
+                </div><!-- col-4 -->
+              </div>
+            </section>
+            <h3>نداءات الميناء</h3>
+            <section>
+              <table class="table" id="PortCalls_table">
+                <thead class="text-info">
+                  <tr>
+                    <th>وقت النداء</th>
+                    <th>نوع النداء</th>
+                    <th>مصدر النداء</th>
+                    <th>حالة التحميل</th>
+                    <th>عمليات الميناء</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="9">
+                      <button type="button" class="btn btn-info btn-sm pull-left add_form_row"
+                        id="add_PortCall_button">+ إضافة
+                        إضافة نداء ميناء
+                      </button>
+                    </td>
+                  </tr>
+                </tfoot>
+
+              </table>
+
+            </section>
+            <h3>نداءات الترصيف</h3>
+            <section>
+              <table class="table" id="BerthCalls_table">
+                <thead class="text-info">
+                  <tr>
+                    <th>وقت الترصيف</th>
+                    <th>وقت إلغاء الترصيف</th>
+                    <th>عمق الفاطس عند الوصول</th>
+                    <th>عمق الغاطس عند المغادرة</th>
+                    <th>حالة التحميل عند الوصول</th>
+                    <th>حالة التحميل عند المغادرة</th>
+                    <th>إسم الرصيف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="9">
+                      <button type="button" class="btn btn-info btn-sm pull-left add_form_row"
+                        id="add_BerthCall_button">+ إضافة
+                        إضافة نداء ترصيف
+                      </button>
+                    </td>
+                  </tr>
+                </tfoot>
+
+              </table>
+            </section>
+            <h3>بيانات البضائع</h3>
+            <section class="mg-t-20 ">
+              <div class="row">
+                <legend>عمليات الميناء</legend>
+                <div class="col">
+                  <label class="rdiobox">
+                    <input name="operation" value="0" type="radio" checked>
+                    <span>لايوجد</span>
+                  </label>
+                </div>
+                <div class="col">
+                  <label class="rdiobox">
+                    <input name="operation" value="1" type="radio">
+                    <span>شحن</span>
+                  </label>
+                </div>
+                <div class="col">
+                  <label class="rdiobox">
+                    <input name="operation" value="2" type="radio">
+                    <span>تفريغ</span>
+                  </label>
+                </div>
+                <div class="col">
+                  <label class="rdiobox">
+                    <input name="operation" value="3" type="radio">
+                    <span>شحن وتفريغ</span>
+                  </label>
+                </div>
+              </div>
+              <hr>
+              <div class="row ShipmentOperation" id="ShipmentLoad">
+                <legend>بيانات الشحن</legend>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="form-control-label">إسم البضاعة</label>
+                    <select class="form-control" name="LoadProduct" id="LoadProduct">
+                      <option value="" selected disabled>-- إختر --</option>
+                      <option value="0">SULPHUR</option>
+                      <option value="1">PETCOKE</option>
+                      <option value="2">UREA (BAG)</option>
+                      <option value="3">UREA(BULK)</option>
+                      <option value="4">ACETIC ACID</option>
+                      <option value="5">CAUSTIC SODA</option>
+                      <option value="6">AMMONIA</option>
+                      <option value="7">BUTADIENE</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="form-control-label">الوزن الطني للبضاعة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="LoadTon" placeholder="الوزن الطني للبضاعة">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="form-control-label">الوزن المتري للبضاعة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="LoadMeter" placeholder="الوزن المتري للبضاعة">
+                  </div>
+                </div><!-- col-4 -->
+              </div>
+              <hr>
+              <div class="row ShipmentOperation" id="ShipmentDischarge">
+                <legend>بيانات التفريغ</legend>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="form-control-label">إسم المنتج</label>
+                    <select class="form-control" name="DischargeProduct" id="DischargeProduct">
+                      <option value="" selected disabled>-- إختر --</option>
+                      <option value="0">SULPHUR</option>
+                      <option value="1">PETCOKE</option>
+                      <option value="2">UREA (BAG)</option>
+                      <option value="3">UREA(BULK)</option>
+                      <option value="4">ACETIC ACID</option>
+                      <option value="5">CAUSTIC SODA</option>
+                      <option value="6">AMMONIA</option>
+                      <option value="7">BUTADIENE</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="form-control-label">الوزن الطني للبضاعة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="DischargeTon" placeholder="الوزن الطني للبضاعة">
+                  </div>
+                </div><!-- col-4 -->
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="form-control-label">الوزن المتري للبضاعة: <span class="tx-danger">*</span></label>
+                    <input class="form-control" type="number" name="DischargeMeter" placeholder="الوزن المتري للبضاعة">
+                  </div>
+                </div><!-- col-4 -->
+              </div>
+
+            </section>
+          </div>
+        </form>
+      </div><!-- br-section-wrapper -->
+    </div><!-- br-pagebody -->
+
+    <footer class="br-footer">
+      <div class="footer-left">
+        <div class="mg-b-2">&copy; 2017. جميع الحقوق محفوظة ميناء الملك فهد الصناعي.</div>
+      </div>
+    </footer>
+  </div><!-- br-mainpanel -->
+  <!-- ########## END: MAIN PANEL ########## -->
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="lib/moment/min/moment.min.js"></script>
+  <script src="lib/peity/jquery.peity.min.js"></script>
+  <script src="lib/jquery-steps/jquery.steps.min.js"></script>
+  <script src="lib/rickshaw/vendor/d3.min.js"></script>
+  <script src="lib/rickshaw/vendor/d3.layout.min.js"></script>
+  <script src="lib/rickshaw/rickshaw.min.js"></script>
+  <script src="lib/jquery-flot/jquery.flot.js"></script>
+  <script src="lib/jquery-flot/jquery.flot.resize.js"></script>
+  <script src="lib/flot-spline/js/jquery.flot.spline.min.js"></script>
+  <script src="lib/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="lib/echarts/echarts.min.js"></script>
+  <script src="lib/select2/js/select2.full.min.js"></script>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyAq8o5-8Y5pudbJMJtDFzb8aHiWJufa5fg"></script>
+  <script src="lib/gmaps/gmaps.min.js"></script>
+  <script src="js/datatables.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <script src="js/bracket.js"></script>
+  <script src="js/map.shiftworker.js"></script>
+  <script src="js/ResizeSensor.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/jquery.autocomplete.min.js"></script>
+  <script>
+    $(document).ready(function ($) {
+      $('#voyage_wizard').steps({
+        headerTag: 'h3',
+        bodyTag: 'section',
+        autoFocus: true,
+        titleTemplate: '#index# #title#',
+        labels: {
+          next: "التالي",
+          previous: "السابق",
+          finish: "إنهاء"
+        }
+      });
+      $(".datepicker").flatpickr({
+        enableTime: true,
+      });
+      $('input[name="MMSI"]').each(function (i, el) {
+        el = $(el);
+        el.autocomplete({
+          serviceUrl: 'vessels.json',
+          onSelect: function (suggestion) {
+            existing_vessel_autofill(suggestion.data)
+
+          }
+        });
+      });
+      //
+      // Add PortCall Event Listener
+      //
+      $(document).on('click', '.add_form_row', function () {
+        var index;
+        var type;
+        if ($(this).attr('id') == "add_PortCall_button") {
+          index = $('tr.PortCall').length;
+          type = 'PortCall';
+        } if ($(this).attr('id') == "add_BerthCall_button") {
+          index = $('tr.BerthCall').length;
+          type = 'BerthCall';
+        }
+
+        $.get("" + type + "_partial.html", function (data) {
+
+          var dataindexed = $(data).addClass(type + '_' + index).appendTo("#" + type + "s_table>tbody");
+          $(".datepicker").flatpickr({
+            enableTime: true,
+          });
+
+          // $(dataindexed).find('.PortCall_national_id').autocomplete({
+          //     serviceUrl: 'PortCalls.json',
+          //     onSelect: function (suggestion) {
+          //         existing_PortCall_autofill(suggestion.data, dataindexed)
+
+          //     }
+          // });
+          //$('.employee_input').each(fnValidateDynamicContent(this));
+        });
+      });
+
+      $(document).on("click", ".remove_form_row", function () {
+        var type = $(this).data('type');
+        $(this).closest("." + type + "").remove().end();
+        // $('.PortCall').each(modifyPortCallIndexing);
+      });
+      // Disable Products Inputs
+      if ($("input[name='operation']:checked").val() == '0') {
+        $('.ShipmentOperation select').prop('disabled', true);
+        $('.ShipmentOperation input').prop('disabled', true);
+      }
+      $("input[name=operation]").change(function () {
+        if ($(this).val() == '0') {
+          $('.ShipmentOperation select').prop('disabled', true);
+          $('.ShipmentOperation input').prop('disabled', true);
+          $('.ShipmentOperation legend').removeClass('tx-dark');
+        }
+        else if ($(this).val() == '1') {
+          $('#ShipmentDischarge select').prop('disabled', true);
+          $('#ShipmentDischarge input').prop('disabled', true);
+          $('#ShipmentLoad select').prop('disabled', false);
+          $('#ShipmentLoad input').prop('disabled', false);
+          $('#ShipmentLoad legend').addClass('tx-dark');
+          $('#ShipmentDischarge legend').removeClass('tx-dark');
+        }
+        else if ($(this).val() == '2') {
+          $('#ShipmentDischarge select').prop('disabled', false);
+          $('#ShipmentDischarge input').prop('disabled', false);
+          $('#ShipmentLoad select').prop('disabled', true);
+          $('#ShipmentLoad input').prop('disabled', true);
+          $('#ShipmentLoad legend').removeClass('tx-dark');
+          $('#ShipmentDischarge legend').addClass('tx-dark');
+
+        }
+        else if ($(this).val() == '3') {
+          $('.ShipmentOperation select').prop('disabled', false);
+          $('.ShipmentOperation input').prop('disabled', false);
+          $('.ShipmentOperation legend').addClass('tx-dark');
+        }
+      });
+      // Water Input
+      if (!$("input[name='LoadWater']").prop("checked")) {
+        $("input[name='WaterTon']").prop('disabled', true);
+      }
+      $("input[name='LoadWater']").change(function () {
+        var checked = $("input[name='LoadWater']").prop("checked");
+        if (!checked) {
+          $("input[name='WaterTon']").prop('disabled', true);
+        } else {
+          $("input[name='WaterTon']").prop('disabled', false);
+
+        }
+
+      })
+      // Ship Flags
+      $.ajax({
+        type: 'GET',
+        url: 'Countries.json',
+        dataType: 'json',
+        success: function (datas, textStatus, jqXHR) {
+          if (datas != null) {
+            $.each(datas,
+              function (i, c) {
+                $("#FLAG").append('<option value="' + c.Code + '">' + c.Name + '</option>');
+
+              });
+          }
+        },
+        error: function (ex) {
+
+        }
+      });
+
+    });
+    function existing_vessel_autofill(MMSI, element) {
+      $.ajax({
+        dataType: "json",
+        url: 'vessels.json',
+        dataType: 'json',
+        success: function (result) {
+          var vessel = $.grep(result, function (n, i) {
+            return n.MMSI === MMSI;
+          });
+
+          $('input[name="SHIPNAME"]').val(vessel[0].SHIPNAME);
+
+          $(element).find('input').prop('disabled', true).end().find('select').prop('disabled', true);
+        }
+      });
+
+    }
+    function modifyEmployeeIndexing(row) {
+      //     var nameAttr;
+      //     var employee_index = $('tr.PortCall').length;
+      //     $(row).find('.PortCall_input').each(function () {
+      //         var idText = $(this).attr('id');
+      //         var namePrefix = 'AwardPayments[' + PortCall_index + '].';
+      //         var nameSuffix = $(this).attr('name');
+      //         nameAttr = namePrefix + nameSuffix;
+      //         if ($(this).hasClass('type'))
+      //             $(this).val(0);
+      //         else
+      //             $(this).val('');
+      //         if (idText)
+      //             $(this).attr('id', idText.replace('_0_', '_' + PortCall_index + '_'));
+      //         $(this).attr('name', nameAttr);
+      //     }).end().find('span[data-valmsg-for]').each(function () {
+      //         var namePrefix = 'AwardPayments[' + PortCall_index + '].';
+      //         if ($(this).attr('data-valmsg-for')) {
+      //             var nameSuffix = $(this).attr('data-valmsg-for');
+      //             nameAttr = namePrefix + nameSuffix;
+      //             $(this).attr('data-valmsg-for', nameAttr);
+      //         }
+      //     });
+      //     return row;
+    }
+
+  </script>
+
+</body>
+
+</html>

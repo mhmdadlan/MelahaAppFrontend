@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@themepixels">
+    <meta name="twitter:creator" content="@themepixels">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bracket Plus">
+    <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="twitter:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/bracketplus">
+    <meta property="og:title" content="Bracket Plus">
+    <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
+
+    <meta property="og:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="author" content="ThemePixels">
+
+    <title>ميناء الجبيل الصناعي</title>
+
+    <!-- vendor css -->
+    <link href="lib/_fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/rickshaw/rickshaw.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Bracket CSS -->
+    <link rel="stylesheet" href="css/bracket.css">
+    <link rel="stylesheet" href="css/bracket.simple-white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        .table-row {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ########## START: LEFT PANEL ########## -->
+    <div class="br-logo"><a href=""><img src="img/logo.png" alt="" class="img-fluid" height="60px"></span></a></div>
+    <div class="br-sideleft sideleft-scrollbar">
+        <label class="sidebar-label pd-x-10 mg-t-20 op-3">القائمة</label>
+        <ul class="br-sideleft-menu">
+            <li class="br-menu-item">
+                <a href="index.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-home"></i>
+                    <span class="menu-item-label">الرئيسية</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub">
+                    <i class="menu-item-icon fas fa-passport"></i>
+                    <span class="menu-item-label">الرحلات</span>
+                </a><!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                    <li class="sub-item"><a href="expected_voyages.html" class="sub-link">الرحلات المتوقعة</a></li>
+                    <li class="sub-item"><a href="current_voyages.html" class="sub-link">الرحلات الحالية</a></li>
+                    <li class="sub-item"><a href="voyages_archive.html" class="sub-link">أرشيف الرحلات</a></li>
+                </ul>
+            </li>
+            <li class="br-menu-item">
+                <a href="ships.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-ship"></i>
+                    <span class="menu-item-label">السفن</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub active show-sub">
+                    <i class="menu-item-icon fas fa-anchor"></i>
+                    <span class="menu-item-label">الترصيف</span>
+                </a><!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                    <li class="sub-item"><a href="berths.html" class="sub-link  active">قائمة الأرصف</a></li>
+                    <li class="sub-item"><a href="Terminals.html" class="sub-link">مناطق الترصيف</a></li>
+                </ul>
+            </li>
+            <li class="br-menu-item">
+                <a href="Products.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-dolly"></i>
+                    <span class="menu-item-label">البضائع</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="map.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-map"></i>
+                    <span class="menu-item-label">الخريطة</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-chart-line"></i>
+                    <span class="menu-item-label">التقارير</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+                  <li class="br-menu-item">
+        <a href="#" class="br-menu-link with-sub">
+          <i class="menu-item-icon fas fa-cog"></i>
+          <span class="menu-item-label">الإعدادات</span>
+        </a><!-- br-menu-link -->
+        <ul class="br-menu-sub">
+          <li class="sub-item"><a href="GeneralConfig.html" class="sub-link">عام</a></li>
+          <li class="sub-item"><a href="ProductsConfig.html" class="sub-link">البضائع</a></li>
+          <li class="sub-item"><a href="ShipsConfig.html" class="sub-link">السفن</a></li>                     <li class="sub-item"><a href="OperatorsConfig.html" class="sub-link">المشغلين و وكلاء الملاحة</a></li>
+          
+          <li class="sub-item"><a href="UsersConfig.html" class="sub-link">المستخدمين والصلاحيات</a></li>
+        </ul>
+      </li>
+
+        </ul><!-- br-sideleft-menu -->
+
+        <br>
+    </div><!-- br-sideleft -->
+    <!-- ########## END: LEFT PANEL ########## -->
+
+    <!-- ########## START: HEAD PANEL ########## -->
+    <div class="br-header">
+        <div class="br-header-left">
+            <div class="navicon-left hidden-md-down"><a id="btnLeftMenu" href=""><i
+                        class="icon ion-navicon-round"></i></a>
+            </div>
+            <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href=""><i
+                        class="icon ion-navicon-round"></i></a></div>
+            <div class="input-group hidden-xs-down wd-170 transition">
+                <input id="searchbox" type="text" class="form-control" placeholder="بحث">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+                </span>
+            </div><!-- input-group -->
+        </div><!-- br-header-left -->
+        <div class="br-header-right">
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
+                        <i class="icon ion-ios-bell-outline tx-24"></i>
+                        <!-- start: if statement -->
+                        <span class="square-8 bg-danger pos-absolute t-15 r-5 rounded-circle"></span>
+                        <!-- end: if statement -->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-header">
+                        <div class="dropdown-menu-label">
+                            <label>التنبيهات</label>
+                            <a href="">تعيين الكل كمقروء</a>
+                        </div><!-- d-flex -->
+
+                        <div class="media-list">
+                            <div class="dropdown-footer">
+                                <a href="">عرض جميع الإشعارات <i class="fa fa-angle-down"></i></a>
+                            </div>
+                        </div><!-- media-list -->
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+                <div class="dropdown">
+                    <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+                        <span class="logged-name hidden-md-down">عبدالرحمن</span>
+                        <img src="img/img1.jpg" class="wd-32 rounded-circle" alt="">
+                        <span class="square-10 bg-success"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-header wd-250">
+                        <div class="tx-center">
+                            <a href=""><img src="img/img1.jpg" class="wd-80 rounded-circle" alt=""></a>
+                            <h6 class="logged-fullname">عبدالرحمن الراشدان</h6>
+                            <p>a.alrashidan@mawani.gov.sa</p>
+                        </div>
+                        <hr>
+                        <ul class="list-unstyled user-profile-nav">
+                            <li><a href="login.html"><i class="icon ion-power"></i> تسجيل خروج</a></li>
+                        </ul>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </nav>
+        </div><!-- br-header-right -->
+    </div><!-- br-header -->
+    <!-- ########## END: HEAD PANEL ########## -->
+
+
+    <!-- ########## START: MAIN PANEL ########## -->
+    <div class="br-mainpanel">
+        <div class="br-pageheader">
+            <nav class="breadcrumb pd-0 mg-0 tx-12">
+                <a class="breadcrumb-item" href="index.html">ميناء الجبيل الصناعي</a>
+                <a class="breadcrumb-item" href="ships.html">الأرصف</a>
+                <span class="breadcrumb-item active">إضافة رصيف</span>
+            </nav>
+        </div>
+        <div class="br-pagetitle">
+            <i class="fas fa-anchor fa-3x"></i>
+            <div>
+                <h4><i class="fas fa-plus tx-14"></i> إضافة رصيف جديد </h4>
+            </div>
+        </div><!-- d-flex -->
+
+        <div class="br-pagebody">
+            <div class="br-section-wrapper">
+                <form action="BerthDetails.html" class="">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label">رقم الرصيف: <span class="tx-danger">*</span></label>
+                                <input class="form-control" type="text" name="BerthNumber" placeholder="رقم الرصيف">
+                            </div>
+                        </div><!-- col-4 -->
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label class="form-control-label">مشغل الرصيف</label>
+                                <select class="form-control" name="SHIPTYPE" id="SHIPTYPE">
+                                    <option value="" selected disabled>-- إختر --</option>
+                                    <option value="">Aramco</option>
+                                    <option value="">Satorp</option>
+                                    <option value="">Sasref</option>
+                                    <option value="">Gulf Company</option>
+                                    <option value="">Sabtank</option>
+                                </select>
+                            </div>
+                        </div><!-- col-4 -->
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label class="form-control-label">منطقة الترصيف</label>
+                                <select class="form-control" name="SHIPTYPE" id="SHIPTYPE">
+                                    <option value="" selected disabled>-- إختر --</option>
+                                    <option value="">الستينات - الناقلات البحرية (OSTT) لأعالي البحار</option>
+                                    <option value="">الخمسينات - ارصفة البتروكيماويات</option>
+                                    <option value="">الأربعينات - ارصفة البتروكيماويات</option>
+                                    <option value="">الثلاثينات - ارصفة البتروكيماويات</option>
+                                    <option value="">العشرينات - ارصفة المواد الصلبة</option>
+                                </select>
+                            </div>
+                        </div><!-- col-4 -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <h4 class="tx-inverse">موقع الرصيف</h4>
+                            <div id="map" style="height: 300px;">
+
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="col-md">
+                                <h4 class="tx-inverse"> البضائع الخاصة بالرصيف</h4>
+                                <div class="table-responsive">
+                                    <table class="table" id="Products_table">
+                                        <thead class="text-info">
+                                            <tr>
+                                                <th>المنتج</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="9">
+                                                    <button type="button"
+                                                        class="btn btn-info btn-sm pull-left add_form_row"
+                                                        id="add_Product_button">+ إضافة
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+
+                                    </table>
+                                </div>
+                                <!-- table-responsive -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn btn-primary btn-lg float-left">إضافة</button>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- br-section-wrapper -->
+        </div><!-- br-pagebody -->
+
+        <footer class="br-footer">
+            <div class="footer-left">
+                <div class="mg-b-2">&copy; 2017. جميع الحقوق محفوظة ميناء الملك فهد الصناعي.</div>
+            </div>
+        </footer>
+    </div><!-- br-mainpanel -->
+    <!-- ########## END: MAIN PANEL ########## -->
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/moment/min/moment.min.js"></script>
+    <script src="lib/peity/jquery.peity.min.js"></script>
+    <script src="lib/jquery-steps/jquery.steps.min.js"></script>
+    <script src="lib/rickshaw/vendor/d3.min.js"></script>
+    <script src="lib/rickshaw/vendor/d3.layout.min.js"></script>
+    <script src="lib/rickshaw/rickshaw.min.js"></script>
+    <script src="lib/jquery-flot/jquery.flot.js"></script>
+    <script src="lib/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="lib/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="lib/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="lib/echarts/echarts.min.js"></script>
+    <script src="lib/select2/js/select2.full.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAMWcPXAwWuXuuxBIUYtFp5m_ZQ9g_0vsg"></script>
+    <script src="lib/gmaps/gmaps.min.js"></script>
+    <script src="js/datatables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="js/bracket.js"></script>
+    <script src="js/map.shiftworker.js"></script>
+    <script src="js/ResizeSensor.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script>
+        $(document).ready(function ($) {
+            var mapJubailVessels = new GMaps({
+                el: '#map',
+                zoom: 13,
+                lat: 27.080505,
+                lng: 49.689500,
+                mapTypeId: google.maps.MapTypeId.SATELLITE,
+                disableDefaultUI: true,
+                zoomControl: true,
+                scaleControl: true,
+                fullscreenControl: true,
+                fullscreenControlOptions: {
+                    position: google.maps.ControlPosition.TOP_LEFT
+                }
+
+            });
+            //
+            // Add product Event Listener
+            //
+            $(document).on('click', '.add_form_row', function () {
+                var index;
+                var type;
+                if ($(this).attr('id') == "add_Product_button") {
+                    index = $('tr.Product').length;
+                    type = 'Product';
+                } if ($(this).attr('id') == "add_BerthCall_button") {
+                    index = $('tr.BerthCall').length;
+                    type = 'BerthCall';
+                }
+
+                $.get("" + type + "_partial.html", function (data) {
+
+                    var dataindexed = $(data).addClass(type + '_' + index).appendTo("#" + type + "s_table>tbody");
+                    $(".datepicker").flatpickr({
+                        enableTime: true,
+                    });
+
+                    // $(dataindexed).find('.Product_national_id').autocomplete({
+                    //     serviceUrl: 'Products.json',
+                    //     onSelect: function (suggestion) {
+                    //         existing_Product_autofill(suggestion.data, dataindexed)
+
+                    //     }
+                    // });
+                    //$('.employee_input').each(fnValidateDynamicContent(this));
+                });
+            });
+
+            $(document).on("click", ".remove_form_row", function () {
+                var type = $(this).data('type');
+                $(this).closest("." + type + "").remove().end();
+                // $('.Product').each(modifyProductIndexing);
+            });
+            function placeMarker(location) {
+                if (marker) {
+                    marker.setPosition(location);
+                } else {
+                    marker = new google.maps.Marker({
+                        position: location,
+                        map: map
+                    });
+                }
+            }
+
+            marker = new google.maps.Marker({
+                map: mapJubailVessels.map
+            });
+            google.maps.event.addListener(mapJubailVessels.map, 'click', function (event) {
+                placeMarker(event.latLng);
+                lat = event.latLng.lat().toFixed(6);
+                lng = event.latLng.lng().toFixed(6);
+                toDegreesMinutesAndSeconds(lat, "N");
+                toDegreesMinutesAndSeconds(lng, "E");
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

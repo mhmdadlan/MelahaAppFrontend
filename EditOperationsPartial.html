@@ -1,0 +1,95 @@
+<h5 class="modal-title tx-right" id="EditModalLabel">إضافة عملية شحن/تفريغ</h5>
+
+<form action="">
+    <div class="row">
+        <legend>عمليات الميناء</legend>
+        <div class="col">
+            <label class="rdiobox">
+                <input name="operation" value="0" type="radio" checked>
+                <span>لايوجد</span>
+            </label>
+        </div>
+        <div class="col">
+            <label class="rdiobox">
+                <input name="operation" value="1" type="radio">
+                <span>شحن</span>
+            </label>
+        </div>
+        <div class="col">
+            <label class="rdiobox">
+                <input name="operation" value="2" type="radio">
+                <span>تفريغ</span>
+            </label>
+        </div>
+        <div class="col">
+            <label class="rdiobox">
+                <input name="operation" value="3" type="radio">
+                <span>شحن وتفريغ</span>
+            </label>
+        </div>
+    </div>
+    <hr>
+    <div class="row ShipmentOperation" id="ShipmentLoad">
+        <legend>بيانات الشحن</legend>
+        <div class="col-4">
+            <div class="form-group">
+                <label class="form-control-label">إسم البضاعة</label>
+                <select class="form-control" name="LoadProduct" id="LoadProduct">
+                    <option value="" selected disabled>-- إختر --</option>
+                    <option value="0">SULPHUR</option>
+                    <option value="1">PETCOKE</option>
+                    <option value="2">UREA (BAG)</option>
+                    <option value="3">UREA(BULK)</option>
+                    <option value="4">ACETIC ACID</option>
+                    <option value="5">CAUSTIC SODA</option>
+                    <option value="6">AMMONIA</option>
+                    <option value="7">BUTADIENE</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+                <label class="form-control-label">الوزن الطني للبضاعة: <span class="tx-danger">*</span></label>
+                <input class="form-control" type="number" name="LoadTon" placeholder="الوزن الطني للبضاعة">
+            </div>
+        </div><!-- col-4 -->
+        <div class="col-4">
+            <div class="form-group">
+                <label class="form-control-label">الوزن المتري للبضاعة: <span class="tx-danger">*</span></label>
+                <input class="form-control" type="number" name="LoadMeter" placeholder="الوزن المتري للبضاعة">
+            </div>
+        </div><!-- col-4 -->
+    </div>
+    <hr>
+    <div class="row ShipmentOperation" id="ShipmentDischarge">
+        <legend>بيانات التفريغ</legend>
+        <div class="col-4">
+            <div class="form-group">
+                <label class="form-control-label">إسم المنتج</label>
+                <select class="form-control" name="DischargeProduct" id="DischargeProduct">
+                    <option value="" selected disabled>-- إختر --</option>
+                    <option value="0">SULPHUR</option>
+                    <option value="1">PETCOKE</option>
+                    <option value="2">UREA (BAG)</option>
+                    <option value="3">UREA(BULK)</option>
+                    <option value="4">ACETIC ACID</option>
+                    <option value="5">CAUSTIC SODA</option>
+                    <option value="6">AMMONIA</option>
+                    <option value="7">BUTADIENE</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+                <label class="form-control-label">الوزن الطني للبضاعة: <span class="tx-danger">*</span></label>
+                <input class="form-control" type="number" name="DischargeTon" placeholder="الوزن الطني للبضاعة">
+            </div>
+        </div><!-- col-4 -->
+        <div class="col-4">
+            <div class="form-group">
+                <label class="form-control-label">الوزن المتري للبضاعة: <span class="tx-danger">*</span></label>
+                <input class="form-control" type="number" name="DischargeMeter" placeholder="الوزن المتري للبضاعة">
+            </div>
+        </div><!-- col-4 -->
+    </div>
+</form>

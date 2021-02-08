@@ -1,0 +1,30 @@
+<h5 class="modal-title tx-right" id="EditModalLabel">تأكيد إغلاق الميناء</h5>
+
+<form action="">
+    <div class="row mg-b-25">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="form-control-label">السبب</label>
+                <select class="form-control" name="Status" id="Status">
+                    <option value="" disabled>-- إختر --</option>
+                    <option value="0">الطقس</option>
+                    <option value="1">أعمال صيانة</option>
+                    <option value="2">حادث</option>
+                    <option value="3">أخرى</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="form-control-label">وقت نداء الإغلاق</label>
+                <input type="text" class="form-control datepicker" placeholder="تحديد الوقت">
+            </div>
+        </div><!-- col-4 -->
+        <div class="col-lg-12">
+            <div class="form-group">
+                <label class="form-control-label">تفاصيل: <span class="tx-danger">*</span></label>
+                <textarea rows="2" class="form-control" placeholder="تفاصيل"></textarea>
+            </div>
+        </div><!-- col-4 -->
+    </div><!-- row -->
+</form>

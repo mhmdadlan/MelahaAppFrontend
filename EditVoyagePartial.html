@@ -1,0 +1,85 @@
+<h5 class="modal-title tx-right" id="EditModalLabel">تعديل معلومات الرحلة</h5>
+
+<form action="">
+  <div class="row mg-b-25">
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label">ميناء الوجهة: <span class="tx-danger">*</span></label>
+        <input class="form-control" type="text" name="destination_port" placeholder="إسم ميناء الوجهة">
+      </div>
+    </div><!-- col-4 -->
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label">الميناء السابق: <span class="tx-danger">*</span></label>
+        <input class="form-control" type="text" name="last_port" placeholder="إسم الميناء السابق">
+      </div>
+    </div><!-- col-4 -->
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label">الميناء التالي: <span class="tx-danger">*</span></label>
+        <input class="form-control" type="text" name="next_port" placeholder="إسم الميناء التالي">
+      </div>
+    </div><!-- col-4 -->
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label">وكيل الملاحة: <span class="tx-danger">*</span></label>
+        <input class="form-control" type="text" name="ship_agent" placeholder="إسم وكيل الملاحة">
+      </div>
+    </div><!-- col-4 -->
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label">عمق الغاطس: <span class="tx-danger">*</span></label>
+        <input class="form-control" type="number" name="draught" placeholder="عمق الغاطس">
+      </div>
+    </div><!-- col-4 -->
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label">عدد البحارة: <span class="tx-danger">*</span></label>
+        <input class="form-control" type="number" name="sailers_count" placeholder="عدد البحارة">
+      </div>
+    </div><!-- col-4 -->
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label">وقت الوصول المتوقع</label>
+        <input type="text" class="form-control datepicker" placeholder="تحديد الوقت">
+      </div>
+    </div><!-- col-4 -->
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label">حالة السفينة</label>
+        <select class="form-control" name="Status" id="Status">
+          <option value="" disabled>-- إختر --</option>
+          <option value="0">under way using engine</option>
+          <option value="1">at anchor</option>
+          <option value="2">not under command</option>
+          <option value="3">restricted maneuverability</option>
+          <option value="4">constrained by her draught</option>
+          <option value="5">moored</option>
+          <option value="6">aground </option>
+          <option value="7">under way sailing </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label">شحن مياه</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><label class="ckbox wd-16 mg-b-0">
+                <input type="checkbox" name="LoadWater"><span></span>
+              </label></span>
+          </div>
+          <input name="WaterTon" type="number" class="form-control" placeholder="الطنية">
+        </div><!-- input-group -->
+
+      </div>
+    </div>
+  </div><!-- row -->
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+      <button type="submit" class="btn btn-primary">حفظ</button>
+    </div>
+
+  </div>
+</form>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@themepixels">
+    <meta name="twitter:creator" content="@themepixels">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bracket Plus">
+    <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="twitter:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/bracketplus">
+    <meta property="og:title" content="Bracket Plus">
+    <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
+
+    <meta property="og:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="author" content="ThemePixels">
+
+    <title>ميناء الجبيل الصناعي</title>
+
+    <!-- vendor css -->
+    <link href="lib/_fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/rickshaw/rickshaw.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Bracket CSS -->
+    <link rel="stylesheet" href="css/bracket.css">
+    <link rel="stylesheet" href="css/bracket.simple-white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        .table-row {
+            cursor: pointer;
+        }
+
+        .br-toggle-switch.close-port::after {
+            content: 'مغلق';
+            right: -34px;
+        }
+
+        .br-toggle-switch.close-port::before {
+            content: 'مفتوح';
+            left: -37px;
+        }
+
+        .br-toggle-switch.close-port::before,
+        .br-toggle-switch.close-port::after {
+            position: absolute;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Cairo', "Fira Sans", "Helvetica Neue", Arial, sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px rgba(33, 37, 41, 0.1);
+        }
+
+        .br-toggle.on .br-toggle-switch.close-port {
+            left: 48px;
+        }
+
+        .br-toggle.close-port {
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ########## START: LEFT PANEL ########## -->
+    <div class="br-logo"><a href=""><img src="img/logo.png" alt="" class="img-fluid" height="60px"></span></a></div>
+    <div class="br-sideleft sideleft-scrollbar">
+        <label class="sidebar-label pd-x-10 mg-t-20 op-3">القائمة</label>
+        <ul class="br-sideleft-menu">
+            <li class="br-menu-item">
+                <a href="index.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-home"></i>
+                    <span class="menu-item-label">الرئيسية</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub">
+                    <i class="menu-item-icon fas fa-passport"></i>
+                    <span class="menu-item-label">الرحلات</span>
+                </a><!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                    <li class="sub-item"><a href="expected_voyages.html" class="sub-link">الرحلات المتوقعة</a></li>
+                    <li class="sub-item"><a href="current_voyages.html" class="sub-link">الرحلات الحالية</a></li>
+                    <li class="sub-item"><a href="voyages_archive.html" class="sub-link">أرشيف الرحلات</a></li>
+                </ul>
+            </li>
+            <li class="br-menu-item">
+                <a href="ships.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-ship"></i>
+                    <span class="menu-item-label">السفن</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub">
+                    <i class="menu-item-icon fas fa-anchor"></i>
+                    <span class="menu-item-label">الترصيف</span>
+                </a><!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                    <li class="sub-item"><a href="berths.html" class="sub-link">قائمة الأرصف</a></li>
+                    <li class="sub-item"><a href="Terminals.html" class="sub-link">مناطق الترصيف</a></li>
+                </ul>
+            </li>
+            <li class="br-menu-item">
+                <a href="Products.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-dolly"></i>
+                    <span class="menu-item-label">البضائع</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="map.html" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-map"></i>
+                    <span class="menu-item-label">الخريطة</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link">
+                    <i class="menu-item-icon fas fa-chart-line"></i>
+                    <span class="menu-item-label">التقارير</span>
+                </a><!-- br-menu-link -->
+            </li><!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub show-sub active">
+                    <i class="menu-item-icon fas fa-cog"></i>
+                    <span class="menu-item-label">الإعدادات</span>
+                </a><!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                    <li class="sub-item"><a href="GeneralConfig.html" class="sub-link active">عام</a></li>
+                    <li class="sub-item"><a href="ProductsConfig.html" class="sub-link">البضائع</a></li>
+                    <li class="sub-item"><a href="ShipsConfig.html" class="sub-link">السفن</a></li>                     <li class="sub-item"><a href="OperatorsConfig.html" class="sub-link">المشغلين و وكلاء الملاحة</a></li>
+                    
+                    <li class="sub-item"><a href="UsersConfig.html" class="sub-link">المستخدمين والصلاحيات</a></li>
+                </ul>
+            </li>
+
+        </ul><!-- br-sideleft-menu -->
+
+        <br>
+    </div><!-- br-sideleft -->
+    <!-- ########## END: LEFT PANEL ########## -->
+
+    <!-- ########## START: HEAD PANEL ########## -->
+    <div class="br-header">
+        <div class="br-header-left">
+            <div class="navicon-left hidden-md-down"><a id="btnLeftMenu" href=""><i
+                        class="icon ion-navicon-round"></i></a>
+            </div>
+            <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href=""><i
+                        class="icon ion-navicon-round"></i></a></div>
+            <div class="input-group hidden-xs-down wd-170 transition">
+                <input id="searchbox" type="text" class="form-control" placeholder="بحث">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+                </span>
+            </div><!-- input-group -->
+        </div><!-- br-header-left -->
+        <div class="br-header-right">
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
+                        <i class="icon ion-ios-bell-outline tx-24"></i>
+                        <!-- start: if statement -->
+                        <span class="square-8 bg-danger pos-absolute t-15 r-5 rounded-circle"></span>
+                        <!-- end: if statement -->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-header">
+                        <div class="dropdown-menu-label">
+                            <label>التنبيهات</label>
+                            <a href="">تعيين الكل كمقروء</a>
+                        </div><!-- d-flex -->
+
+                        <div class="media-list">
+                            <div class="dropdown-footer">
+                                <a href="">عرض جميع الإشعارات <i class="fa fa-angle-down"></i></a>
+                            </div>
+                        </div><!-- media-list -->
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+                <div class="dropdown">
+                    <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+                        <span class="logged-name hidden-md-down">عبدالرحمن</span>
+                        <img src="img/img1.jpg" class="wd-32 rounded-circle" alt="">
+                        <span class="square-10 bg-success"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-header wd-250">
+                        <div class="tx-center">
+                            <a href=""><img src="img/img1.jpg" class="wd-80 rounded-circle" alt=""></a>
+                            <h6 class="logged-fullname">عبدالرحمن الراشدان</h6>
+                            <p>a.alrashidan@mawani.gov.sa</p>
+                        </div>
+                        <hr>
+                        <ul class="list-unstyled user-profile-nav">
+                            <li><a href="login.html"><i class="icon ion-power"></i> تسجيل خروج</a></li>
+                        </ul>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </nav>
+        </div><!-- br-header-right -->
+    </div><!-- br-header -->
+    <!-- ########## END: HEAD PANEL ########## -->
+
+
+    <!-- ########## START: MAIN PANEL ########## -->
+    <div class="br-mainpanel">
+        <div class="br-pageheader">
+            <nav class="breadcrumb pd-0 mg-0 tx-12">
+                <a class="breadcrumb-item" href="index.html">ميناء الجبيل الصناعي</a>
+                <a class="breadcrumb-item" href="#">الإعدادات</a>
+                <span class="breadcrumb-item active">إعدادات عامة</span>
+            </nav>
+        </div>
+        <div class="br-pagetitle">
+            <i class="fas fa-cog fa-3x"></i>
+            <div>
+                <h4>إعدادات عامة</h4>
+            </div>
+        </div><!-- d-flex -->
+
+        <div class="br-pagebody">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="br-section-wrapper pd-x-15 pd-y-25">
+                        <form action="GeneralConfig.html" class="">
+                            <div class="form-layout form-layout-6">
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-sm-4">
+                                        إسم النظام:
+                                    </div><!-- col-4 -->
+                                    <div class="col-7 col-sm-8">
+                                        <input class="form-control" type="text" name="fullname" autofocus
+                                            value="نظام الملاحة البحرية بميناء الملك فهد الصناعي بالجبيل">
+                                    </div><!-- col-8 -->
+                                </div><!-- row -->
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-sm-4">
+                                        حالة الميناء:
+                                    </div><!-- col-4 -->
+                                    <div class="col-7 col-sm-8">
+                                        <div id="closePort"
+                                            class="br-toggle br-toggle-rounded br-toggle-primary on close-port">
+                                            <div class="br-toggle-switch close-port"></div>
+                                        </div>
+                                    </div><!-- col-8 -->
+                                </div><!-- row -->
+                            </div>
+                            <div class="row mg-t-20">
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn btn-primary btn-lg float-left">حفظ</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div><!-- br-section-wrapper -->
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-base bd-0" id="WeatherCard">
+                        <div class="card-header bg-transparent pd-x-25 pd-y-15 bd-b-0">
+                            <h4 class="card-title tx-uppercase tx-16 mg-b-5 tx-center">الطقس بالجبيل اليوم</h4>
+                        </div><!-- card-header -->
+                        <div id="LoadingImage" class="tx-center" style="display: none;">
+                            <img class="img-responsive" style="margin: 0 auto;" src="/img/Blocks.svg" />
+                        </div>
+                        <div class="card-body rounded-0 pd-t-0">
+                            <div id="WeatherIcon" class="tx-center mg-b-20">
+                                <img src="" alt="" class="img-responsive">
+                            </div>
+                            <div class="d-flex justify-content-between tx-12">
+                                <div>
+                                    <p class="tx-10 tx-uppercase tx-medium mg-b-0 tx-spacing-1">حالة الطقس</p>
+                                    <h2 class="tx-inverse tx-bold tx-lato">
+                                        <span id="WeatherText"></span></h2>
+                                </div>
+                                <div>
+                                    <p class="tx-10 tx-uppercase tx-medium mg-b-0 tx-spacing-1">درجة الحرارة</p>
+                                    <h2 class="tx-inverse tx-bold tx-lato">
+                                        <span id="Temperature"></span></h2>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="tx-10 tx-uppercase tx-medium mg-b-0 tx-spacing-1">سرعة الرياح</p>
+
+                                        <h5 id="WindSpeed" class="mg-b-0 mg-t-5 tx-inverse tx-bold tx-lato"></h5>
+                                    </div>
+
+                                </div>
+                            </div><!-- d-flex -->
+                            <div class="d-flex justify-content-between tx-12">
+                                <div>
+                                    إتجاه الرياح
+                                    <h5 id="WindDirection" class="mg-b-0 mg-t-5 tx-inverse tx-bold tx-lato"></h5>
+                                </div>
+                                <div>
+                                    مدى الرؤية
+                                    <h5 id="Visibility" class="mg-b-0 mg-t-5 tx-inverse tx-bold tx-lato"></h5>
+                                </div>
+                            </div><!-- d-flex -->
+                        </div><!-- card -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="br-section-wrapper  pd-x-15 pd-y-25 mg-t-20">
+                        <h6 class="br-section-label pd-y-15"><span class="fas fa-history"></span> سجل إغلاق الميناء</h6>
+                        <div class="table-responsive ">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="">السبب</th>
+                                        <th class="">وقت الإغلاق</th>
+                                        <th class="">وقت الفتح</th>
+                                        <th class="">تفاصيل</th>
+                                        <th class="">بواسطة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tx-12">الطقس</td>
+                                        <td class="tx-right">2019-12-24 20:33:00</td>
+                                        <td class="tx-right">2019-12-24 22:33:00</td>
+                                        <td>تم إغلاق الميناء بسبب الطقس</td>
+                                        <td>عبدالرحمن الراشدان</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tx-12">الطقس</td>
+                                        <td class="tx-right">2019-12-24 20:33:00</td>
+                                        <td class="tx-right">2019-12-24 22:33:00</td>
+                                        <td>تم إغلاق الميناء بسبب الطقس</td>
+                                        <td>عبدالرحمن الراشدان</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- table-responsive -->
+                    </div><!-- br-section-wrapper -->
+
+                </div>
+
+            </div>
+        </div><!-- br-pagebody -->
+
+        <footer class="br-footer">
+            <div class="footer-left">
+                <div class="mg-b-2">&copy; 2017. جميع الحقوق محفوظة ميناء الملك فهد الصناعي.</div>
+            </div>
+        </footer>
+    </div><!-- br-mainpanel -->
+    <!-- ########## END: MAIN PANEL ########## -->
+    <div class="modal fade" dir="rtl" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="EditModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="LoadingImage" class="tx-center" style="display: none;">
+                        <img class="img-responsive" style="margin: 0 auto;" src="/img/Blocks.svg" />
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                    <button type="button" class="btn btn-primary saveButton">تأكيد</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/moment/min/moment.min.js"></script>
+    <script src="lib/peity/jquery.peity.min.js"></script>
+    <script src="lib/jquery-steps/jquery.steps.min.js"></script>
+    <script src="lib/rickshaw/vendor/d3.min.js"></script>
+    <script src="lib/rickshaw/vendor/d3.layout.min.js"></script>
+    <script src="lib/rickshaw/rickshaw.min.js"></script>
+    <script src="lib/jquery-flot/jquery.flot.js"></script>
+    <script src="lib/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="lib/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="lib/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="lib/echarts/echarts.min.js"></script>
+    <script src="lib/select2/js/select2.full.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAMWcPXAwWuXuuxBIUYtFp5m_ZQ9g_0vsg"></script>
+    <script src="lib/gmaps/gmaps.min.js"></script>
+    <script src="js/datatables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="js/bracket.js"></script>
+    <script src="js/map.shiftworker.js"></script>
+    <script src="js/ResizeSensor.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script>
+        $("#WeatherCard #LoadingImage").show();
+        $("#WeatherCard .card-body").hide();
+        $(document).ready(function ($) {
+            loadWeatherInfo();
+            $("#EditModal .saveButton").click(function () {
+                $("#EditModal").modal('hide');
+                $('#closePort').toggleClass("on")
+            });
+            $('#EditModal').on('show.bs.modal', function () {
+                $("#EditModal #LoadingImage").show();
+            });
+            $('#EditModal').on('hidden.bs.modal', function () {
+                $("#EditModal .modal-body form").remove();
+                $("#EditModal .modal-header h5").remove();
+            });
+
+
+            $('#closePort').on('click', function (e) {
+                e.preventDefault();
+                if ($(this).hasClass('on')) {
+                    $("#EditModal").modal('show');
+                    loadEditForm("ClosePortPartial");
+                } else {
+                    $("#EditModal").modal('show');
+                    loadEditForm("OpenPortPartial");
+                }
+
+            });
+
+        });
+
+        function loadEditForm(form) {
+            $.ajax({
+                type: "GET",
+                url: "/" + form + ".html",
+                success: function (response) {
+                    if (response.Status == 400) {
+                        $.notify({
+                            // options
+                            message: 'خطأ عند الطلب الرجاء التاكد من صحة العملية.'
+                        }, {
+                            // settings
+                            type: 'warning'
+                        });
+                    } else if (response.Status == "Unautherized") {
+                        $("#DeleteModal").modal("hide");
+                        $.notify({
+                            // options
+                            message: 'لا تملك الصلاحية المناسبة .'
+                        }, {
+                            // settings
+                            type: 'warning'
+                        });
+                    } else {
+                        $("#EditModal #LoadingImage").hide();
+                        var form = $(response).filter('form').appendTo("#EditModal .modal-body");
+                        var form = $(response).filter('h5').prependTo("#EditModal .modal-header");
+                        // fnValidateDynamicContent("#DeleteForm");
+                    }
+                },
+                error: function (xhr, status) {
+                    if (xhr.status == 404) {
+                        $('#EditModal').on('shown.bs.modal', function () {
+                            alert("Not Found");
+                            $("#LoadingImage").hide();
+                            $("#EditModal").modal("hide");
+                        });
+                    }
+                },
+                complete: function () {
+                    $(".datepicker").flatpickr({
+                        enableTime: true,
+                    });
+
+                }
+            });
+
+        }
+        function loadWeatherInfo() {
+            $.ajax({
+                type: "GET",
+                url: "https://dataservice.accuweather.com/currentconditions/v1/297091?language=ar-sa&apikey=zGMJ3VLlnrYwLLAc6SjrhnfY88qLvGX0&details=true",
+                success: function (response) {
+                    if (response.Status == 400) {
+                        $.notify({
+                            // options
+                            message: 'خطأ عند الطلب الرجاء التاكد من صحة العملية.'
+                        }, {
+                            // settings
+                            type: 'warning'
+                        });
+                    } else if (response.Status == "Unautherized") {
+                        $.notify({
+                            // options
+                            message: 'لا تملك الصلاحية المناسبة .'
+                        }, {
+                            // settings
+                            type: 'warning'
+                        });
+                    } else {
+                        $("#LoadingImage").hide();
+                        $("#WeatherCard .card-body").show(function () {
+                            $("#WeatherText").html(response[0].WeatherText);
+                            $("#Temperature").html(response[0].Temperature.Metric.Value + "&deg;");
+                            $("#WindDirection").html(response[0].Wind.Direction.Localized + "(" + response[0].Wind.Direction.Degrees + ")");
+                            $("#WindSpeed").html(response[0].Wind.Speed.Metric.Value + response[0].Wind.Speed.Metric.Unit);
+                            $("#Visibility").html(response[0].Visibility.Metric.Value + response[0].Visibility.Metric.Unit);
+                            $("#WeatherIcon img").attr("src", "https://developer.accuweather.com/sites/default/files/" + response[0].WeatherIcon + "-s.png")
+
+                        });
+                        // fnValidateDynamicContent("#DeleteForm");
+                    }
+                },
+                error: function (xhr, status) {
+                    if (xhr.status == 404) {
+                        alert("لم أستطع عرض معلومات الطقس");
+                        $("#WeatherCard #LoadingImage").hide();
+                    }
+                }
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

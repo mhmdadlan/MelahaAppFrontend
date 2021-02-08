@@ -1,0 +1,43 @@
+<tr class="BerthCall">
+    <td><input type="text" name="DockTime" class="BerthCall_input BerthCallDockTime form-control datepicker"
+            placeholder="وقت الترصيف"></td>
+    <td><input type="text" name="UnDockTime" class="BerthCall_input BerthCallUnDockTime form-control datepicker"
+            placeholder="وقت إلغاء الترصيف"></td>
+    <td><input type="number" name="ArrivalDraught" class="BerthCall_input BerthCallArrivalDraught form-control"
+            placeholder="عمق الغاطس عند الوصول"></td>
+    <td><input type="number" name="DepatureDraught" class="BerthCall_input BerthCallDepatureDraught form-control"
+            placeholder="عمق الغاطس عند المغادرة"></td>
+    <td>
+        <select name="CallType" class="BerthCall_input form-control BerthCallType">
+            <option value="0">وصول</option>
+            <option value="1">مغادرة</option>
+        </select>
+    </td>
+    <td>
+        <select name="BerthCallOrigin" class="BerthCall_input form-control BerthCallOrigin">
+            <option value="Anchorage">منطقة المخطاف</option>
+            <option value="Port">الميناء</option>
+        </select>
+    </td>
+    <td>
+        <select name="BerthCallArrivalLoadStatus" class="BerthCall_input form-control BerthCallArrivalLoadStatus">
+            <option value="0">غير معرف</option>
+            <option value="1">ثقل/فارغة</option>
+            <option value="2">محلمة جزئيا</option>
+            <option value="3">محملة كليا</option>
+        </select>
+    </td>
+    <td>
+        <select name="BerthCallDepatureLoadStatus" class="BerthCall_input form-control BerthCallDepatureLoadStatus">
+            <option value="0">غير معرف</option>
+            <option value="1">ثقل/فارغة</option>
+            <option value="2">محلمة جزئيا</option>
+            <option value="3">محملة كليا</option>
+        </select>
+    </td>
+    <td>
+        <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-simple btn-xs remove_form_row" data-type="BerthCall">
+            <i class="fa fa-times"></i></button>
+    </td>
+
+</tr>

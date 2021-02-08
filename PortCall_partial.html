@@ -1,0 +1,38 @@
+<tr class="PortCall">
+    <td><input type="text" name="CallTime" class="PortCall_input PortCallTime form-control datepicker"
+            placeholder="وقت النداء"></td>
+    <td>
+        <select name="CallType" class="PortCall_input form-control PortCallType">
+            <option value="0">وصول</option>
+            <option value="1">مغادرة</option>
+        </select>
+    </td>
+    <td>
+        <select name="PortCallOrigin" class="PortCall_input form-control PortCallOrigin">
+            <option value="Anchorage">منطقة المخطاف</option>
+            <option value="Port">الميناء</option>
+        </select>
+    </td>
+    <td>
+        <select name="PortCallPortOperations" class="PortCall_input form-control PortCallPortOperations">
+                <option value="0">غير معرف</option>
+                <option value="1">تحميل</option>
+                <option value="2">تفريغ</option>
+                <option value="3">تحميل/تفريغ</option>
+                <option value="4">لا يوجد عمليات</option>
+            </select>
+    </td>
+    <td>
+        <select name="PortCallLoadStatus" class="PortCall_input form-control PortCallLoadStatus">
+            <option value="0">غير معرف</option>
+            <option value="1">ثقل/فارغة</option>
+            <option value="2">محلمة جزئيا</option>
+            <option value="3">محملة كليا</option>
+        </select>
+    </td>
+    <td>
+            <button type="button" rel="tooltip" title="حذف" class="btn btn-danger btn-simple btn-xs remove_form_row" data-type="PortCall">
+                <i class="fa fa-times"></i></button>
+        </td>
+    
+</tr>
